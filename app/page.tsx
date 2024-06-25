@@ -5,7 +5,9 @@ import FancyButton from "@/components/ui/FancyButton";
 import Input from "@/components/ui/Input";
 import LiveClock from "@/components/ui/LiveClock";
 import Profile from "@/components/ui/Profile";
+import ScrollDown from "@/components/ui/ScrollDown";
 import TextArea from "@/components/ui/TextArea";
+import MagneticWrapper from "@/components/visualEffects/MagneticWrapper";
 import WaterWaveWrapper from "@/components/visualEffects/WaterWaveWrapper";
 import { BiUserCircle } from "react-icons/bi";
 import { CgPassword } from "react-icons/cg";
@@ -35,12 +37,21 @@ export default function Home() {
                 </Button>
                 <Button link="https://www.google.com">Google</Button>
               </div>
-              <Input type="text" placeholder="Full name"/>
-              <Input type="password" placeholder="Enter password" icon={<CgPassword />} />
+              <Input type="text" placeholder="Full name" />
+              <Input
+                type="password"
+                placeholder="Enter password"
+                icon={<CgPassword />}
+              />
               <TextArea icon={<BiUserCircle />} placeholder="Enter your text" />
               <Profile />
-              <div className="w-[350px]"><FancyButton text="Contact us" icon={<FaArrowRight />} /></div>
+              <MagneticWrapper className="w-[350px]">
+                <FancyButton text="Contact us" icon={<FaArrowRight />} />
+              </MagneticWrapper>
               <LiveClock timeZone="Africa/Casablanca" />
+              <MagneticWrapper>
+                <ScrollDown />
+              </MagneticWrapper>
             </Card>
           </div>
         </div>
