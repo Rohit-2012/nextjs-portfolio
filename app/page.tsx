@@ -1,13 +1,15 @@
 "use client";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
+import FancyButton from "@/components/ui/FancyButton";
 import Input from "@/components/ui/Input";
+import LiveClock from "@/components/ui/LiveClock";
 import Profile from "@/components/ui/Profile";
 import TextArea from "@/components/ui/TextArea";
 import WaterWaveWrapper from "@/components/visualEffects/WaterWaveWrapper";
 import { BiUserCircle } from "react-icons/bi";
 import { CgPassword } from "react-icons/cg";
-import { FaUser } from "react-icons/fa";
+import { FaArrowRight, FaUser } from "react-icons/fa";
 import { GoHomeFill } from "react-icons/go";
 
 export default function Home() {
@@ -37,6 +39,8 @@ export default function Home() {
               <Input type="password" placeholder="Enter password" icon={<CgPassword />} />
               <TextArea icon={<BiUserCircle />} placeholder="Enter your text" />
               <Profile />
+              <div className="w-[350px]"><FancyButton text="Contact us" icon={<FaArrowRight />} /></div>
+              <LiveClock timeZone="Africa/Casablanca" />
             </Card>
           </div>
         </div>
