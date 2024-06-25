@@ -2,6 +2,7 @@
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import Input from "@/components/ui/Input";
+import Profile from "@/components/ui/Profile";
 import TextArea from "@/components/ui/TextArea";
 import WaterWaveWrapper from "@/components/visualEffects/WaterWaveWrapper";
 import { BiUserCircle } from "react-icons/bi";
@@ -34,7 +35,8 @@ export default function Home() {
               </div>
               <Input type="text" placeholder="Full name"/>
               <Input type="password" placeholder="Enter password" icon={<CgPassword />} />
-              <TextArea icon={<BiUserCircle />} placeholder="Enter your text"/>
+              <TextArea icon={<BiUserCircle />} placeholder="Enter your text" />
+              <Profile />
             </Card>
           </div>
         </div>
