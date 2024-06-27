@@ -1,4 +1,5 @@
 import WorkCard from "@/components/cards/work/WorkCard";
+import ExpandableCards from "@/components/expandables/ExpandableCards";
 import Heading from "@/components/heading/Heading";
 import { workData } from "@/data";
 
@@ -16,6 +17,9 @@ const Work = () => {
         tag={MainWork.tag}
         video={MainWork.video}
       />
+      <div className="mt-24">
+        <ExpandableCards />
+      </div>
     </div>
   );
 };
