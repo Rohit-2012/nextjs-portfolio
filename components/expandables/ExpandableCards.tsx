@@ -30,6 +30,7 @@ const ExpandableCards = () => {
             title={work.title}
             tag={work.tag}
             video={work.video}
+            link={work.link}
           />
         </div>
       ))}

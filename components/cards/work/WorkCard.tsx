@@ -1,18 +1,20 @@
 import { FC, ReactNode } from "react";
 import Heading from "./Heading";
 import Video from "./Video";
+import Link from "next/link";
 
 interface WorkCardProps {
     logo?: ReactNode;
     title: string;
     tag: string;
     video: string;
-    active: boolean
+    active: boolean;
+    link: string;
 }
 
-const WorkCard:FC<WorkCardProps> = ({logo, title, tag, video, active}) => {
+const WorkCard:FC<WorkCardProps> = ({logo, title, tag, video, active, link}) => {
     return (
-        <div className="link w-full h-full bg-secondary-background border border-border shadow-lg rounded-3xl cursor-pointer flex flex-col gap-2 flex-nowrap p-2">
+        <Link href={link} target="_blank" className="link w-full h-full bg-secondary-background border border-border shadow-lg rounded-3xl cursor-pointer flex flex-col gap-2 flex-nowrap p-2">
             {/* Heading */}
             <Heading title={title} tag={tag} />
             {/* Body */}
@@ -20,7 +22,7 @@ const WorkCard:FC<WorkCardProps> = ({logo, title, tag, video, active}) => {
                 {/* Video */}
                 <Video video={ video} active={active} />
             </div>
-        </div>
+        </Link>
     );
 }
 

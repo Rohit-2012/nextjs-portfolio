@@ -8,9 +8,9 @@ const Header = () => {
         <div className="w-full flex items-center justify-center md:justify-between">
             <Profile />
             <div className="hidden md:inline">
-                <MagneticWrapper>
+                {/* <MagneticWrapper>
                     <FancyButton text="Let's talk" icon={<FaArrowRight /> } />
-                </MagneticWrapper>
+                </MagneticWrapper> */}
             </div>
         </div>
     );
