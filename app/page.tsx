@@ -2,6 +2,7 @@
 
 import WaterWaveWrapper from "@/components/visualEffects/WaterWaveWrapper";
 import About from "@/sections/About";
+import Contact from "@/sections/Contact";
 import Landing from "@/sections/Landing";
 import Work from "@/sections/Work";
 
@@ -16,9 +17,10 @@ export default function Home() {
     >
       {() => (
         <div className="pb-8">
-          {/* <Landing /> */}
-          {/* <Work /> */}
-          {/* <About /> */}
+          <Landing />
+          <Work />
+          <About />
+          <Contact />
         </div>
       )}
     </WaterWaveWrapper>
