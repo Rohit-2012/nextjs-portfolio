@@ -1,11 +1,17 @@
 "use client";
 
-import WaterWaveWrapper from "@/components/visualEffects/WaterWaveWrapper";
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
 import Landing from "@/sections/Landing";
 import Work from "@/sections/Work";
+import dynamic from "next/dynamic";
 
+
+// Dynamic import WaterWaveWrapper to ensure it's only used in the client-side environment
+const WaterWaveWrapper = dynamic(
+  () => import("@/components/visualEffects/WaterWaveWrapper"),
+  { ssr: false }
+);
 
 export default function Home() {
   return (

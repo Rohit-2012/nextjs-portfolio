@@ -16,6 +16,7 @@ const Work = () => {
         title={MainWork.title}
         tag={MainWork.tag}
         video={MainWork.video}
+        link={MainWork.link}
       />
       <div className="mt-24">
         <ExpandableCards />
