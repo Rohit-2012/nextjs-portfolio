@@ -16,7 +16,7 @@ const Resume = () => {
         personal projects, I have demonstrated my ability to create dynamic,
         responsive web applications with both user-friendly interfaces and
         robust backend systems. Explore my portfolio to see my work and learn
-        more about my journey. Let's create something amazing together!
+        more about my journey. Let&apos;s create something amazing together!
       </p>
       {/* Signature */}
       <div>

@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <WaterWaveWrapper
       imageUrl=""
-      dropRadius="3"
-      perturbance="3"
+      dropRadius="8"
+      perturbance="0.3"
       resolution="2048"
     >
       {() => (
